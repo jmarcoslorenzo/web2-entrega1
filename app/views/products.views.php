@@ -6,7 +6,6 @@ require_once 'app/models/products.model.php';
 
 function showHome() {
     echo "header";
-    require 'temp/header.php';
 }
 
 function showProducts() {
@@ -14,8 +13,8 @@ function showProducts() {
     
     foreach($productos as $producto){
         echo $producto->TIPO;
-        // echo $producto->TALLE;
-        // echo $producto->PRECIO;
+        echo $producto->TALLE;
+        echo $producto->PRECIO;
     }
 
 }
